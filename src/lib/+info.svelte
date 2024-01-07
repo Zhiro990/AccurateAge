@@ -1,24 +1,14 @@
 <script>
 	export let birthday;
 
-	let length = 10;
-
 	function Change() {
 		setInterval(() => {
 			let info = document.getElementById("info");
 
 			let age = (Date.now() - Date.parse(birthday)) / 31536000000;
 
-			info.innerHTML =
-				age.toFixed(length) + (length == 10 ? " " : "<br>") + "years";
+			info.innerHTML = age.toFixed(10) + " years";
 		}, 1);
-	}
-
-	function ExpandCollapse() {
-		let arrow = document.getElementById("arrow");
-		arrow.classList.toggle("rotate-0");
-
-		length = length == 10 ? 49 : 10;
 	}
 </script>
 
@@ -29,12 +19,4 @@
 			???
 		</p>
 	</div>
-	<button class="mt-2 mx-auto" on:click={ExpandCollapse}>
-		<img
-			id="arrow"
-			src="./pictures/arrow.svg"
-			class="w-[30px] rotate-180"
-			alt="arrow"
-		/>
-	</button>
 </div>
