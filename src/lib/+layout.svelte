@@ -1,7 +1,8 @@
 <script>
 	import "../app.css";
+	import Footer from "$lib/+footer.svelte";
 </script>
 
-<main class="min-h-screen bg-[#1f232e] justify-center items-center text-center">
-	<slot />
-</main>
+<slot />
+
+<Footer />

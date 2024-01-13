@@ -2,7 +2,6 @@
 	import Layout from "$lib/+layout.svelte";
 	import Input from "$lib/+input.svelte";
 	import Info from "$lib/+info.svelte";
-	import Footer from "$lib/+footer.svelte";
 
 	import { page } from "$app/stores";
 
@@ -15,5 +14,4 @@
 	{:else}
 		<Info {birthday} />
 	{/if}
-	<Footer />
 </Layout>

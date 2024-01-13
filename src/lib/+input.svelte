@@ -7,7 +7,7 @@
 	}
 </script>
 
-<div class="w-full h-auto pt-[150px]">
+<div class="w-full h-auto mt-[150px]">
 	<h1 class="text-[#ffffff] text-[18px] font-bold">Enter your birthday:</h1>
 	<input
 		id="input"
