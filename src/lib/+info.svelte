@@ -13,10 +13,10 @@
 </script>
 
 <div use:Change class="w-full h-auto mt-[150px]">
-	<h1 class="text-[#ffffff] text-[30px] font-bold">Age</h1>
-	<div class="w-fit h-auto bg-[#39d7fe] px-2 py-1 mt-2 mx-auto rounded-lg">
-		<p id="info" class="font-[monospace] text-[#000000] text-[20px] break-all">
-			???
-		</p>
+	<h1 class="font-bold text-[18px] text-[#ffffff]">Your age is:</h1>
+	<div
+		class="w-fit h-auto bg-[#39d7fe] px-[5px] py-[2.5px] mt-[25px] mx-auto rounded-lg"
+	>
+		<p id="info" class="font-mono text-[18px] text-[#000000]">???</p>
 	</div>
 </div>
