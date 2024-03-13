@@ -12,7 +12,7 @@
 		>
 			<p class="font-bold text-[18px] text-[#000000]">Error: {$page.status}</p>
 		</div>
-		<p class="font-bold text-[18px] text-[#ffffff]/[80%] mt-[30px]">
+		<p class="font-bold text-[18px] text-[#ffffff] mt-[30px]">
 			{$page.error.message}
 		</p>
 	</div>
