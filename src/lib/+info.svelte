@@ -1,6 +1,4 @@
 <script>
-	import Footer from "$lib/+footer.svelte";
-
 	export let birthday;
 
 	function Change() {
@@ -22,5 +20,3 @@
 		<p id="info" class="font-mono text-[18px] text-[#000000]">???</p>
 	</div>
 </div>
-
-<Footer />

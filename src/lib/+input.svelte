@@ -1,6 +1,4 @@
 <script>
-	import Footer from "$lib/+footer.svelte";
-
 	let today = new Date().toISOString().split("T")[0];
 
 	function Confirm() {
@@ -27,5 +25,3 @@
 		Confirm
 	</button>
 </div>
-
-<Footer />
