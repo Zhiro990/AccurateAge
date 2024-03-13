@@ -1,6 +1,6 @@
 <script>
 	import Layout from "$lib/+layout.svelte";
-	import Footer from "$lib/+footer.svelte"
+	import Footer from "$lib/+footer.svelte";
 
 	import { page } from "$app/stores";
 </script>

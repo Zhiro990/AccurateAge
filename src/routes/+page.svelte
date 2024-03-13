@@ -15,6 +15,6 @@
 	{:else}
 		<Info {birthday} />
 	{/if}
-	
+
 	<Footer />
 </Layout>
