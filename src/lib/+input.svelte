@@ -1,4 +1,6 @@
 <script>
+	import Footer from "$lib/+footer.svelte";
+
 	let today = new Date().toISOString().split("T")[0];
 
 	function Confirm() {
@@ -9,7 +11,7 @@
 </script>
 
 <div class="w-full h-auto mt-[150px]">
-	<h1 class="font-bold text-[18px] text-[#ffffff]">Enter your birthday:</h1>
+	<p class="font-bold text-[18px] text-[#ffffff]">Enter your birthday:</p>
 	<input
 		id="input"
 		type="date"
@@ -25,3 +27,5 @@
 		Confirm
 	</button>
 </div>
+
+<Footer />
