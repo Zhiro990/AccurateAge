@@ -6,15 +6,17 @@
 
 	import { page } from "$app/stores";
 
-	let birthday = $page.url.searchParams.get("date");
+	let date = $page.url.searchParams.get("date");
 </script>
 
 <Layout>
-	{#if !birthday}
-		<Input />
-	{:else}
-		<Info {birthday} />
-	{/if}
+	<div class="top-0 bottom-0 left-0 right-0 absolute">
+		{#if !date}
+			<Input />
+		{:else}
+			<Info {date} />
+		{/if}
 
-	<Footer />
+		<Footer />
+	</div>
 </Layout>
