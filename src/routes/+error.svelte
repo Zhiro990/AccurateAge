@@ -6,16 +6,15 @@
 </script>
 
 <Layout>
-	<div class="w-full h-auto mt-[75px]">
+	<div class="top-0 bottom-0 left-0 right-0 absolute">
 		<div
-			class="w-fit h-auto bg-[#39d7fe] px-[20px] py-[5px] mx-auto rounded-lg"
+			class="w-fit h-auto bg-[#39d7fe] mt-[75px] px-[20px] py-[5px] mx-auto rounded-lg"
 		>
 			<p class="font-bold text-[18px] text-[#000000]">Error: {$page.status}</p>
 		</div>
 		<p class="font-bold text-[18px] text-[#ffffff] mt-[30px]">
 			{$page.error.message}
 		</p>
+		<Footer />
 	</div>
-
-	<Footer />
 </Layout>
