@@ -8,7 +8,7 @@
 	}
 </script>
 
-<p class="font-bold text-[18px] text-[#ffffff] mt-[150px]">
+<p class="font-bold text-[17px] text-[#ffffff] mt-[50px]">
 	Enter your birth date:
 </p>
 
@@ -23,7 +23,7 @@
 
 <button
 	id="button"
-	class="bg-[#39d7fe] text-[16px] text-[#000000] px-[5px] py-[2.5px] mt-[10px] rounded-lg"
+	class="bg-[#39d7fe] text-[16px] text-[#000000] px-[7.5px] py-[2.5px] mt-[10px] rounded-lg"
 	on:click={Confirm}
 >
 	Confirm

@@ -57,14 +57,14 @@
 	}
 </script>
 
-<p class="font-bold text-[18px] text-[#ffffff] mt-[150px]">Your age is:</p>
+<p class="font-bold text-[17px] text-[#ffffff] mt-[50px]">Your age is:</p>
 
-<div class="w-fit h-auto mt-[25px] mx-auto">
+<div class="w-fit h-auto mt-[20px] mx-auto">
 	<div class="w-full h-auto bg-[#39d7fe] px-[20px] py-[10px] rounded-t-lg">
-		<p use:Change id="info" class="font-bold text-[18px] text-[#000000]">...</p>
+		<p use:Change id="info" class="font-bold text-[17px] text-[#000000]">...</p>
 	</div>
 
 	<div class="w-full h-auto bg-[#303742] px-[20px] py-[10px] rounded-b-lg">
-		<p id="addition" class="text-[18px] text-[#ffffff]">...</p>
+		<p id="addition" class="text-[17px] text-[#ffffff]">...</p>
 	</div>
 </div>
