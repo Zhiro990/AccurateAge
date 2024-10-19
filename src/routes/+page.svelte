@@ -16,7 +16,7 @@
 		>
 			<p class="font-bold text-[21px] text-[#000000]">AccurateAge</p>
 		</div>
-		
+
 		{#if !date}
 			<Input />
 		{:else}

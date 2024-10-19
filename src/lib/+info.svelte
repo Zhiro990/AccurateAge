@@ -21,31 +21,31 @@
 
 		let days_only = Math.floor((Date.parse(now) - Date.parse(x)) / 86400000);
 
-		if (x.getFullYear() != now.getFullYear()) {
-			years += now.getFullYear() - x.getFullYear() - 1;
-
-			if (
-				x.getMonth() < now.getMonth() ||
-				(x.getMonth() == now.getMonth() && x.getDate() <= now.getDate())
-			)
-				years++;
-		}
+		years +=
+			now.getFullYear() -
+			x.getFullYear() -
+			(x.getMonth() < now.getMonth() ||
+			(x.getMonth() == now.getMonth() && x.getDate() <= now.getDate())
+				? 0
+				: 1);
 
 		x = new Date(x.getFullYear() + years, x.getMonth(), x.getDate());
 
-		if (x.getMonth() != now.getMonth()) {
-			months += now.getMonth() + 1;
+		months =
+			x.getFullYear() < now.getFullYear()
+				? 11 -
+					x.getMonth() +
+					now.getMonth() +
+					(x.getDate() <= now.getDate() ? 1 : 0)
+				: now.getMonth() -
+					x.getMonth() -
+					(x.getDate() <= now.getDate() ? 0 : 1);
 
-			if (x.getFullYear() < now.getFullYear()) {
-				months += 12 - (x.getMonth() + 1);
-			} else {
-				months -= x.getMonth() + 1;
-			}
-
-			if (x.getDate() <= now.getDate()) months++;
-		}
-
-		x = new Date(now.getFullYear(), now.getMonth(), x.getDate());
+		x = new Date(
+			now.getFullYear(),
+			((x.getMonth() + 1 + months) % 12) - 1,
+			x.getDate()
+		);
 
 		days = Math.floor((Date.parse(now) - Date.parse(x)) / 86400000);
 
