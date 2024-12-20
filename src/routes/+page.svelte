@@ -1,4 +1,5 @@
 <script>
+	import Header from "$lib/+header.svelte";
 	import Layout from "$lib/+layout.svelte";
 	import Input from "$lib/+input.svelte";
 	import Info from "$lib/+info.svelte";
