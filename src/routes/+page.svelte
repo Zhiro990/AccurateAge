@@ -56,11 +56,11 @@
 							(x.getDate() <= now.getDate() ? 0 : 1);
 
 				x = new Date(
-					now.getFullYear(),
-					(x.getMonth() + months) % 12,
+					x.getFullYear(),
+					x.getMonth() + months,
 					x.getDate()
 				);
-
+				
 				days = Math.floor((Date.parse(now) - Date.parse(x)) / 86400000);
 
 				document.querySelector("#years-months-days").textContent =
